@@ -38,7 +38,9 @@ document.addEventListener('DOMContentLoaded', async (event) => {
   }
   console.log(window.location);
 
-  document.querySelector('button').addEventListener('click', window.location.reload);
+  document.querySelector('button').addEventListener('click', function () {
+    window.location.reload();
+  });
 
 });
 function createCard(
